@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <p>
+        <form action="demo-form.php" method="get">
+		<button type="submit" id="view-report" class="btn btn-success" formaction="http://127.0.0.1:5000/index">返回首页</button>
+        </form>
+      </p>
+
+	<div id="report-alert" class="alert alert-success alert-dismissible" role="alert" hidden></div>
+
+    <table class="table table-hover">
+
+		<tbody id="tbody"></tbody>
+	</table>
+
+
+
+</div>
+{% endblock %}
